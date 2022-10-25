@@ -16,7 +16,7 @@
 
 ## 示例
 
-[demo预览地址: https://chengyoujie.github.io/LayaTextExtends/demo/bin/](https://github.com/chengyoujie/LayaTextExtends)
+demo预览地址: [https://chengyoujie.github.io/LayaTextExtends/demo/bin/](https://chengyoujie.github.io/LayaTextExtends/demo/bin/)
 
 
 
