@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "declaration": true,
+    "outFile": "./bin/layaTextExt.js",
+    "experimentalDecorators": true,
+    "lib": [
+      "es5",
+      "dom",
+      "es2015"
+    ],
+    "types": [],
+    "sourceMap": false
+  },
+  "include": [
+    "libs",
+    "src"
+  ]
+}
