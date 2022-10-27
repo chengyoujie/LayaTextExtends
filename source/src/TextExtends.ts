@@ -666,8 +666,8 @@ module layaTextExt {
                     if(!style.htmlStyle)return totalAddNum;
                     let textWidth = 0;
                     let lineText = "";
-                    var ctxFont = this._getContextFont();
-                    let htmlCtxFont = ctxFont;
+                    var ctxFont = this._getContextFont();//默认的字体
+                    let htmlCtxFont = Laya.Browser.context.font;//当前的字体
                     var lineHeight = this._charSize.height;
                     let textHeight = lineHeight;//每行文本的最大高度
                     for (var i:number = styleIndex; i <= endIndex; i++) {
