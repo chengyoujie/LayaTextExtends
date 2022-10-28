@@ -550,6 +550,10 @@ var layaTextExt;
                                                 return;
                                             }
                                         }
+                                        else if (this.overflow == Laya.Text.SCROLL) {
+                                            if (y < 0)
+                                                continue;
+                                        }
                                     }
                                     x = padding[3] - (this._clipPoint ? this._clipPoint.x : 0);
                                     let nextLineW = this._lineWidths[lineIndex]; //this._getTextWidth(nextLineTxt);
@@ -708,8 +712,8 @@ var layaTextExt;
                                     this._graphics.drawLine(underlineX, underlineY, underlineX + charsWidth, underlineY, underlineColor || color, 1);
                                 }
                                 this._words || (this._words = []);
-                                if (this._words.length > (i - beginLine)) {
-                                    _word = this._words[i - beginLine];
+                                if (this._words.length > i) {
+                                    _word = this._words[i];
                                 }
                                 else {
                                     _word = new Laya.WordText();

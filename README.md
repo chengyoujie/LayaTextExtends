@@ -2,7 +2,7 @@
 
 [github地址](https://github.com/chengyoujie/LayaTextExtends)
 
-
+![富文本示例](https://img-blog.csdnimg.cn/1c42849f3894447db9fc54110d1258e9.png)
 
 ## 使用说明
 

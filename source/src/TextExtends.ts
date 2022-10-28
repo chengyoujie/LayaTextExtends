@@ -295,6 +295,8 @@ module layaTextExt {
                                             if(this.height && y>=this.height){
                                                 return;
                                             }
+                                        }else if(this.overflow == Laya.Text.SCROLL){
+                                            if(y<0)continue;
                                         }
                                     }
                                     x = padding[3] - (this._clipPoint ? this._clipPoint.x : 0);
@@ -446,8 +448,8 @@ module layaTextExt {
                                 }
     
                                 this._words || (this._words = []);
-                                if (this._words.length > (i - beginLine)) {
-                                    _word = this._words[i - beginLine];
+                                if (this._words.length > i) {
+                                    _word = this._words[i];
                                 } else {
                                     _word = new Laya.WordText();
                                     this._words.push(_word);
